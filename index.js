@@ -190,7 +190,7 @@ var SpreadsheetRow = function( spreadsheet, data, xml ){
 			}
 		} else {
 			if (key == "id") {
-				self[key] = val;
+				self["_id"] = val;
 			} else if (val['#']) {
 				self[key] = val['#'];
 			} else if ( key == 'link' ){
